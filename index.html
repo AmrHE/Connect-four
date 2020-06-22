@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Four</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Connect Four</h1>
+    
+    <!-- <h3 class="player-turn"></h3> -->
+    <div id="scoreboard"></div>
+
+    <div class="play-mode">
+        <button class="single">Play Against The Computer</button>
+        <br>
+        <button class="multi">Play With Your Friend</button>
+    </div>
+
+    <div id="playertype">
+        <div id="difficulty">
+            Choose The  Difficulty Level
+        </div>
+        <div>
+            <input type="button" id="pvc-easy" value="Dumb-AI">
+        </div>
+        <div>
+            <input type="submit" id="pvc-unbeatable" value="Smart-AI">
+        </div>
+    </div>
+
+    <form>
+        <div class="players">
+            <label  for="player 1">
+                Player One 
+                <br>
+                <input type="text" id='player1' required placeholder="Your Name!"> 
+            </label>
+            <br>
+
+            <div class="player2">
+                <label  for="player 2">
+                    Player Two 
+                    <br>
+                    <input type="text" id='player2' required placeholder="Friend's Name!">
+                </label>
+            </div> 
+            <button type="submit" class="startGame" value="Start Game"> Start Game</button>
+        </div>
+    </form>
+
+
+    <div id="score">
+        <div id="player1-name"></div>
+        <div id="player2-name"></div>
+        <div id="score-overview"></div>
+
+        <button class="newGame" onclick="newGame()">New Round</button>
+        <button class="reset" onclick="location.reload()">Reset Game</button>
+    </div>
+
+    
+
+
+
+
+
+    <div class="grid-container">
+        <table>
+            <tr>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+            </tr>
+            <tr>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+            </tr>
+            <tr>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+            </tr>
+            <tr>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+            </tr>
+            <tr>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+            </tr>
+            <tr>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+            </tr>
+        </table>
+    </div>
+
+
+    <footer>
+        Made by <a href="https://github.com/AmrHE" target="_blank">Amr Hassan</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
